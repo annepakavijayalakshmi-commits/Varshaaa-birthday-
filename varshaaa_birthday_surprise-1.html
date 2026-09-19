@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Varshaaa 💗</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,.8) 0 2px, transparent 3px),
+      radial-gradient(circle at 80% 30%, rgba(255,255,255,.7) 0 2px, transparent 3px),
+      linear-gradient(135deg, #ffdce8, #f9c8dc 45%, #f7d9e8);
+    background-size: 130px 130px, 170px 170px, cover;
+    color: #6d4055;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 16px;
+    overflow-x: hidden;
+  }
+
+  .hearts span {
+    position: fixed;
+    font-size: 22px;
+    animation: float 7s linear infinite;
+    opacity: .7;
+    pointer-events: none;
+  }
+  .hearts span:nth-child(1){left:8%;bottom:-30px;animation-delay:0s}
+  .hearts span:nth-child(2){left:24%;bottom:-30px;animation-delay:2s}
+  .hearts span:nth-child(3){left:70%;bottom:-30px;animation-delay:4s}
+  .hearts span:nth-child(4){left:88%;bottom:-30px;animation-delay:1s}
+  @keyframes float {
+    to { transform: translateY(-110vh) rotate(25deg); opacity: 0; }
+  }
+
+  .card {
+    width: min(720px, 100%);
+    background: rgba(255,255,255,.84);
+    border: 1px solid rgba(255,255,255,.95);
+    border-radius: 30px;
+    padding: 34px 25px;
+    box-shadow: 0 18px 55px rgba(126,65,91,.22);
+    text-align: center;
+    backdrop-filter: blur(9px);
+  }
+
+  .ribbon { font-size: 42px; }
+  h1 {
+    margin: 8px 0 8px;
+    color: #c35b83;
+    font-size: clamp(32px, 7vw, 54px);
+  }
+  .subtitle {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #946079;
+  }
+
+  #message {
+    display: none;
+    text-align: left;
+    line-height: 1.75;
+    font-size: 16px;
+    color: #684456;
+    animation: reveal .9s ease;
+  }
+  #message.show { display: block; }
+
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .open-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 15px 30px;
+    background: #d96891;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(217,104,145,.3);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .open-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 11px 25px rgba(217,104,145,.4);
+  }
+
+  .closing {
+    text-align: center;
+    font-weight: bold;
+    color: #bd527b;
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  .confetti {
+    position: fixed;
+    top: -15px;
+    width: 9px;
+    height: 14px;
+    animation: fall 3s linear forwards;
+    pointer-events: none;
+  }
+  @keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); }
+  }
+
+  @media (max-width: 520px) {
+    .card { padding: 27px 19px; border-radius: 24px; }
+    #message { font-size: 15px; line-height: 1.7; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hearts">
+  <span>💗</span><span>🎀</span><span>✨</span><span>🌸</span>
+</div>
+
+<main class="card">
+  <div class="ribbon">🎀💗✨</div>
+  <h1>Happy Birthday, Varshaaa!</h1>
+  <div class="subtitle">A little birthday surprise, just for you 🥹💕</div>
+
+  <button class="open-btn" id="openBtn" onclick="openSurprise()">
+    Open your surprise 💌
+  </button>
+
+  <section id="message">
+    <p><strong>Happy Birthday, Varshaaa! 🎀💗✨</strong></p>
+
+    <p>I just want to wish you the happiest birthday ever. 🥹💗 I hope this new year of your life brings you endless happiness, peace, beautiful memories, and everything your heart wishes for. You deserve so many good things, and I genuinely hope life keeps giving you reasons to smile every single day. 🌷✨</p>
+
+    <p>Most importantly, be happy. Always. 🫶🏻 No matter what happens, never forget to take care of yourself, keep smiling, and enjoy the little moments. I hope you always have people around you who make you feel loved, appreciated, and special. 💕</p>
+
+    <p>You have such a special place in my heart, and I'm really grateful for every little memory, every conversation, every laugh, and every moment we've shared. 🥹🎀 I hope we get to make so many more beautiful memories together.</p>
+
+    <p>On your birthday, I just want to see you smiling, enjoying your day, and feeling how loved and special you truly are. 💗 Don't stress about anything today—just enjoy yourself, eat something yummy, take lots of pictures, laugh a lot, and make this day yours. 🫶🏻✨</p>
+
+    <p>May this year bring you closer to your dreams, give you countless reasons to be proud of yourself, and fill your life with happiness that stays. 🌸💫</p>
+
+    <p><strong>Happy Birthday once again, Varshaaa! 🎂🎀💗</strong><br>
+    Be happy. Keep smiling. Keep shining. And never forget how special you are. 🥹✨<br>
+    I hope your smile stays the same and your happiness only gets bigger. 💕🫶🏻</p>
+
+    <div class="closing">Made with lots of birthday love 🎀💗✨</div>
+  </section>
+</main>
+
+<script>
+function openSurprise() {
+  document.getElementById("message").classList.add("show");
+  document.getElementById("openBtn").style.display = "none";
+  launchConfetti();
+}
+
+function launchConfetti() {
+  const symbols = ["💗","🎀","✨","🌸","💕","🎉"];
+  for (let i = 0; i < 45; i++) {
+    const el = document.createElement("div");
+    el.className = "confetti";
+    el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    el.style.left = Math.random() * 100 + "vw";
+    el.style.fontSize = (14 + Math.random() * 14) + "px";
+    el.style.animationDuration = (2 + Math.random() * 2) + "s";
+    el.style.animationDelay = Math.random() * .8 + "s";
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 4500);
+  }
+}
+</script>
+</body>
+</html>
